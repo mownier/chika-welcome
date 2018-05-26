@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SHd-vn-M7c">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scene-->
+        <scene sceneID="Ub7-rO-1TH">
+            <objects>
+                <viewController id="SHd-vn-M7c" customClass="Scene" customModule="ChikaWelcome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="trf-sw-UMz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZm-3G-KaL">
+                                <rect key="frame" x="16" y="583" width="343" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ZLR-5e-K42"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="register" destination="SHd-vn-M7c" eventType="touchUpInside" id="2RR-Uh-OXt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chika" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAn-OU-aEz">
+                                <rect key="frame" x="16" y="44" width="343" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38.5" id="R8L-10-6ro"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYB-GT-cuN">
+                                <rect key="frame" x="16" y="515" width="343" height="52"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="yLa-Ax-ada"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signIn" destination="SHd-vn-M7c" eventType="touchUpInside" id="ipe-fp-TYj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rAn-OU-aEz" firstAttribute="top" secondItem="QsB-Mq-Mz1" secondAttribute="top" constant="24" id="8SE-12-XSY"/>
+                            <constraint firstItem="TYB-GT-cuN" firstAttribute="trailing" secondItem="wZm-3G-KaL" secondAttribute="trailing" id="B3Z-vz-vc8"/>
+                            <constraint firstItem="QsB-Mq-Mz1" firstAttribute="trailing" secondItem="wZm-3G-KaL" secondAttribute="trailing" constant="16" id="DJM-jQ-uNE"/>
+                            <constraint firstItem="wZm-3G-KaL" firstAttribute="top" secondItem="TYB-GT-cuN" secondAttribute="bottom" constant="16" id="Mk7-p3-eTC"/>
+                            <constraint firstItem="QsB-Mq-Mz1" firstAttribute="bottom" secondItem="wZm-3G-KaL" secondAttribute="bottom" constant="32" id="QAb-fv-Pbx"/>
+                            <constraint firstItem="QsB-Mq-Mz1" firstAttribute="trailing" secondItem="rAn-OU-aEz" secondAttribute="trailing" constant="16" id="RMm-4i-lOe"/>
+                            <constraint firstItem="rAn-OU-aEz" firstAttribute="leading" secondItem="QsB-Mq-Mz1" secondAttribute="leading" constant="16" id="WJg-fI-SpK"/>
+                            <constraint firstItem="TYB-GT-cuN" firstAttribute="leading" secondItem="wZm-3G-KaL" secondAttribute="leading" id="c72-vu-YO5"/>
+                            <constraint firstItem="wZm-3G-KaL" firstAttribute="leading" secondItem="QsB-Mq-Mz1" secondAttribute="leading" constant="16" id="whN-Gl-DE9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QsB-Mq-Mz1"/>
+                    </view>
+                    <connections>
+                        <outlet property="appNameLabel" destination="rAn-OU-aEz" id="v7z-tp-aNp"/>
+                        <outlet property="registerButton" destination="wZm-3G-KaL" id="LVR-NA-Clv"/>
+                        <outlet property="signInButton" destination="TYB-GT-cuN" id="UL9-00-BRS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Bv-Is-lsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="188.45577211394306"/>
+        </scene>
+    </scenes>
+</document>
